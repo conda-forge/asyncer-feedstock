@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: asyncer
-  version: "0.0.10"
+  version: "0.0.11"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/asyncer-${{ version }}.tar.gz
-  sha256: 8ae3e569d4c0af2882be0822f848adf59712cc52aa5da6ead53473869c90d98e
+  sha256: c66c3f0700d12d89551b56f4bc867b4bd61601fd650e474b550ac874110062f1
 
 build:
   number: 0
