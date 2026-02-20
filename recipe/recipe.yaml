@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: asyncer
-  version: "0.0.14"
+  version: 0.0.15
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/asyncer-${{ version }}.tar.gz
-  sha256: 501cba6a8f03ce24f7d9fe1f6a5af6fd155a98eee542f0898a4f43f6a4c2b67d
+  sha256: 339c8493a2be8f188e4bf741019252f7c344e2a78c83a37913dc7832c47f4309
 
 build:
   number: 0
@@ -26,8 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - anyio >=3.4.0,<5.0
     - sniffio >=1.1
-    - typing_extensions >=4.8.0
-
+    - typing_extensions >=4.12.0
 tests:
   - python:
       imports:
